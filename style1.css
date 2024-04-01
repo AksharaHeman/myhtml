@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    color: brown;
+    margin-top: 5%;
+
+}
+#demo{
+    background-color: gray;
+    color: white;
+    font-size: 1.8em;
+
+}
+#para{
+    border: 2px solid black;
+    align-content: center;
+    margin: 10%;
+    padding: 3%;
+    font-size: 1.3em;
+    background-color: beige;
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+    color: bisque;
+
+}
+body{
+    background-color: palegreen;
+}
