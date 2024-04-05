@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul.topnav{
+            margin: 0;
+            padding: 0;
+            background-color: blueviolet;
+            overflow: hidden;
+            list-style-type: none;
+        }
+        ul.topnav li a.active,a.img,a.cont{
+            float: left;
+        }
+        ul.topnav li a{
+            display: block;
+            text-align: center;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        ul.topnav li a.active{
+            background-color: red;
+        }
+        ul.topnav li a:hover:not(.active){
+            background-color: black;
+        }
+        ul.topnav li a.right{
+            float: right;
+            
+        }
+        @media screen and (max-width:800px) {
+            ul.topnav li a.right,ul.topnav li{
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#" class="img">Images</a></li>
+        <li><a href="#" class="cont">Contact Us</a></li>
+        <li><a href="#" class="right">About Us</a></li>
+
+    </ul>
+</body>
+</html>
