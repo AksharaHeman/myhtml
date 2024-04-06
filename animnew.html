@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            
+            margin: 10px;
+        }
+        #demo1{
+            background-color:red;
+            animation-name: anim;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 10;
+            animation-timing-function: ease;
+            animation-direction: reverse;
+
+        }
+        #demo2{
+            background-color: palevioletred;
+            animation-name: anim;
+            animation-duration: 8s;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+        #demo3{
+            background-color: green;
+            animation-name: anim;
+            animation-duration: 8s;
+            animation-delay: 3s;
+            animation-iteration-count: 12;
+            animation-timing-function: ease-out;
+            animation-direction: normal;
+        }
+        @keyframes anim{
+            0%{
+                background-color: aqua;
+                left: 0px;
+            }
+            100%{
+                
+                left: 500px;
+                border-radius: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+</body>
+</html>
