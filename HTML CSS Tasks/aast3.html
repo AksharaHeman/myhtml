@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            
+            }
+            .bodydiv{
+                background-color: rgb(226, 223, 223);
+            }
+            .bodydiv #div1{
+                text-align: center;
+                font-size: 25px;
+                word-spacing: 5px;
+                padding-top: 2%;
+            }
+            #column1{
+                width: 50%;
+                float: left;
+                
+            }
+            #column2{
+                width: 50%;
+                float: left;
+                
+            }
+            #row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            text-align: center;
+            display: block;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+            <div style="padding: 10px;">The Book Series</div>
+            <div style="padding: 10px;">Testimonials</div>
+            <div style="padding: 10px;">The Author</div>
+            <div style="padding: 10px;">Free Resources</div>
+        
+    </div>
+
+    <div class="bodydiv">
+        <div id="div1">
+           <b>You don't know JavaScript</b> 
+        </div>
+        <div id="row" style="background-color: rgb(226, 223, 223);">
+            <div id="column1">
+                <div id="imagediv" style="background-color: rgb(226, 223, 223);">
+                <img style="padding: 4%; border: 1px solid rgb(226, 223, 223); border-radius: 20px;" src="https://media.istockphoto.com/id/1481862788/photo/stack-of-books-with-blurred-bookshelf-background-reading-learning-education-or-home-office.jpg?b=1&s=170667a&w=0&k=20&c=XY_j8T8iB8XXqkW09OT_1sAZ7BtjfExi3H8XnZtp8HM=" alt="" width="500px" height="500px">
+                </div>
+            </div>
+            <div id="column2">
+                <div id="matterdiv" style="background-color: rgb(226, 223, 223); text-align: center;">
+                    <br><br><br><div><b>Don't just drift through Javascript</b></div><br><br>
+                <div><b>Understand how Javascript works</b></div><br><br>
+                <div><b>Start your journey through the bumpy side of javascript</b></div><br><br>
+                <div><button style="background-color: rgb(248, 119, 73); width: 250px; height: 30px; border-radius: 5px; color: white; border: none;">Order Your Copy Now</button></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>The first ebook in the book series is absolutely free.</div>
+        <div><button style="background-color: rgb(248, 119, 73); width: 350px; height: 30px; border-radius: 5px; color: white; border: none;">FIND OUT MORE ABOUT THIS OFFER</button></div>
+
+    </div>
+</body>
+</html>

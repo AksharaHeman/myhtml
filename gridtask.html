@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .div{
+            background-color: rgb(229, 52, 52);
+            color: white;
+            width: 100%;
+            /* padding-left: 1%; 
+            padding-top: 2%;
+            padding-bottom: 2%;  */
+            font-style: italic;
+        }
+        .grid{
+            display: grid;
+            width: 100%;
+            padding-top: 5%;
+            /* padding-left: 20%; */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .grid img{
+            width: 100%;
+        }
+        body{
+            margin: 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h2>Images</h2>
+    </div>
+    <div class="grid">
+        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" alt="">
+        <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" alt="">
+        <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400" alt="">
+        <img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" alt="">
+        <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="">
+        <img src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg" alt="">
+    </div>
+</body>
+</html>

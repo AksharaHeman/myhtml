@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <span id="demo">Hello World</span>
+    <script>
+        const d=document.getElementById("demo").innerText
+        console.log(d)
+        document.getElementById("demo").innerText=d+"Hiii"
+    </script> -->
+
+    <form name="regform">
+        <input type="text" id="uname" name="uname">
+        <button type="button" onclick="fClass()">Submit</button>
+    </form>
+
+    <span id="demo11" class="demo">Hello World</span><br>
+    <span id="demo22" class="demo">Hiii World</span><br>
+    <span id="demo33" class="demo">Heyyy World</span>
+
+
+    
+    <script>
+        // function fun(){
+        // const uname=document.regform.uname.value
+        // console.log(uname)
+        // }
+
+         function fClass(){
+            const d=document.getElementsByClassName("demo")
+            // console.log(d)
+            // d[1].innerHTML="Byee"
+            // for(i=0;i<d.length)
+            const r=document.getElementsByTagName("span")
+            console.log(r)
+            r[0].innerHTML=r[0].innerHTML+" "+"AAAAAAA"
+
+            const n=document.getElementsByName("uname")
+            console.log(n)
+            n[0].value="hii"
+        }
+    </script>
+</body>
+</html>

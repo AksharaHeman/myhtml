@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        <input type="text" id="uname" name="uname">
+        <button type="button" onclick="fnCall()">Done</button>
+    </form>
+
+
+    <!-- <span id="demo">Hello World</span> -->
+
+
+    <span id="demo1" class="demo">Hiiiiii</span><br>
+    <span id="demo2" class="demo">Kiiiiii</span><br>
+    <span id="demo3" class="demo">Liiiiii</span><br>
+    <span id="demo4" class="demo">Giiiiii</span><br>
+
+
+    <script>
+        // const name="Akshara"
+        // document.write(name)
+        // console.log(name)
+        // console.log(name,"Achu")
+        // var data="abc"
+        // var data=10
+        // let dat="ahb"
+        // const d="hjj"
+
+
+
+        // function fnData(){
+        //     const uname=document.form1.uname.value       //value calling from input text in form
+        //     console.log(uname)
+        // }
+
+
+        // const r=document.getElementById("demo").innerHTML         //using id, print hello world
+        // console.log(r)                                            
+        // document.getElementById("demo").innerHTML=r+" "+"Hiiii"   //add hiii to hello world
+
+
+        // function backColor(){
+        //     document.body.style.backgroundColor="pink"
+        //     document.getElementById("demo").style.color="green"
+        // }
+
+
+
+
+        function fnCall(){
+            // const elem=document.getElementsByClassName("demo")
+            // console.log(elem)
+            // elem[0].innerHTML="Hellooooooo"
+
+            // const elem1=document.getElementsByTagName("span")
+            // console.log(elem1)
+            // elem1[1].innerHTML=elem1[1].innerHTML+" "+"Akshara"
+
+            // const elem2=document.getElementsByName("uname")
+            // console.log(elem2)
+            // elem2[0].value="Dhinkrit"
+
+
+
+            const elem=document.querySelector(".demo")
+            console.log(elem)
+            elem.innerHTML="Prijin"
+            
+            // const elem1=document.querySelector("#demo3").innerHTML
+            // console.log(elem1)
+            // const elem2=document.querySelector("span").innerHTML
+            // console.log(elem2)
+            // const element=document.querySelectorAll(".demo")
+            // console.log(element)
+        }
+        
+        const name="Akshara"
+        const num=20
+        // document.write(name)
+        // document.write("Hiii"+" " +name+ " your age is"+" "+num)
+        // document.write(`${name}`)
+        document.write(`${name} is a student and ${num} is your age`)
+    </script>
+</body>
+</html>

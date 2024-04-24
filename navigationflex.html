@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            display: flex;
+            margin: 2%;
+            padding: 2%;
+
+        }
+        .div1{
+            flex: 50%;
+            background-color: blueviolet;
+        }
+        .div2{
+            flex: 50%;
+            background-color: olivedrab;
+        }
+        @media screen and (max-width: 800px) {
+            .parent{
+                flex-direction: column;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+    </div>
+</body>
+</html>

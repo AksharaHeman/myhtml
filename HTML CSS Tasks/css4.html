@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #demo{
+            width: 100%;
+            margin-top: 2%;
+            
+            background-color: rgb(55, 226, 8);
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            float: left;
+        }
+        #div1,#div2,#div3,#div4,#div5{
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #div1{
+            background-color: rgb(55, 226, 8);
+            color: rgb(141, 141, 19);
+        }
+        a:hover:not(.div1){
+            background-color: rgb(194, 123, 194);
+        } */
+    
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(64, 247, 64);
+        }
+        li{
+            float: left;
+        }
+        li a, .pdt{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            padding: 14px 16px;
+            text-align: center;
+        }
+        li a:hover{
+            background-color: gray;
+        }
+        li a.hom{
+            color: goldenrod;
+        }
+        li.dropdown{
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: rgb(64, 247, 64);
+        }
+        .dropdown-content a{
+            display: block;
+            color: white;
+            text-align: left;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="demo">
+        <div id="div1"><a href="#">Home</a></div>
+        <div id="div2"><a href="#">About</a></div>
+        <div id="div3"><a href="#">Products</a></div>
+        <div id="div4"><a href="#">Services</a></div>
+        <div id="div5"><a href="#">Contact</a></div>
+    </div> -->
+
+
+    <ul>
+        <li><a href="" class="hom">Home</a></li>
+        <li><a href="" class="about">About</a></li>
+        <li class="dropdown"><a href="" class="pdt">Products</a>
+            <div class="dropdown-content">
+                <a href="#">Engineering</a>
+                <a href="#">Telecom</a>
+                <a href="#">Energy</a>
+                <a href="#">Finance</a>
+                <a href="#">Consultancy</a>
+            </div>
+        
+        </li>
+        <li><a href="" class="ser">Services</a></li>
+        <li><a href="" class="cont">Contact</a></li>
+    </ul>
+</body>
+</html>
